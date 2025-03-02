@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import profile from '../../assets/profile.jpeg'
 import '../../styles/home.css'
-import github from '../../assets/github.svg'
 
 const Home = () => {
 
