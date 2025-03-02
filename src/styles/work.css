@@ -1,0 +1,101 @@
+.work-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 750px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 5rem;
+  padding-top: 1.5rem;
+  font-size: 1.125rem;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+@media (max-width: 640px) {
+  .work-container {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-container {
+    margin-left: 10%;
+  }
+}
+
+.header {
+  margin-top: -30px;
+  margin-left: 50px;
+}
+
+.header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #e4e4e7;
+  margin-bottom: 20px;
+}
+
+.header h3 {
+  font-size: 18px;
+}
+
+.experience-container {
+  color: inherit;
+  background: #2d2d2d;
+  cursor: pointer;
+  margin: 6px;
+  padding: 0.25rem 1.25rem;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.experience-container .workcity {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.experience-container .workplace h1{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.experience-container .workplace p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FACF15;
+  margin-bottom: 10px;
+}
+
+.experience-container .work-desc p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-container .work-skills {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.experience-container .work-skills .skill p {
+  font-size: 14px;
+  border: 1px solid #FACF15;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.experience-container .work-skills .skill:hover {
+  color: #ffffff;
+}
+

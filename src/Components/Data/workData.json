@@ -1,0 +1,28 @@
+{
+  "header": {
+    "title": "Work Experience",
+    "description": "I have been fortunate to work with an amazing team. Here is a brief overview of my work experience."
+  },
+  "experience": [
+    {
+      "city": "Chennai, India",
+      "timeline": "Dec 2023 - Present",
+      "position": "Assistant System Engineer (Software Engineer - Site Reliability)",
+      "company": "Tata Consultancy Services",
+      "description": [
+        "In this role, I’m responsible for monitoring critical batch processes and SnapLogic pipelines, ensuring everything runs efficiently and seamlessly.",
+        "I also collaborate with the development team to support production turnarounds and change implementations, ensuring smooth transitions and minimal disruptions.",
+        "I handle root cause analysis for any issues that arise, leveraging my problem-solving skills to quickly identify the causes and implement long-term solutions.",
+        "This role has expanded my expertise in cloud infrastructure, automation, and performance optimization, while providing hands-on experience with critical operational processes."
+      ],
+      "skills": [
+        "SQL",
+        "Kafka",
+        "Snaplogic",
+        "Informatica",
+        "Oracle DB",
+        "REST API"
+      ]
+    }
+  ]
+}
