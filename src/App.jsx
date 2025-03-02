@@ -1,13 +1,17 @@
-import './app.css'
-import profile from './assets/profile.jpeg'
+import '../src/styles/app.css'
 import ChatLink from './Components/NavBarComps/ChatLink'
 import Nav from './Components/NavBarComps/Nav'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './Components/Pages/Home'
+import Work from './Components/Pages/Work'
+import Projects from './Components/Pages/Projects'
+import Posts from './Components/Pages/Posts'
 
 function App() {
 
   return (
     <>
+    <Router>
     {/* Body-Container starts here */}
     <div className="body-container">
 
@@ -22,13 +26,18 @@ function App() {
         </div>
       </div>
       {/* Nav-bar section ends */}
-
-      {/* Intro-section starts */}
-      <div className="intro-section">
-        <img className='profile-pic' src={profile} alt="Memoji-Mac" />
-      </div>
   
-      </div> 
+      </div>
+
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/work' element={<Work />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/posts' element={<Posts />} />
+      </Routes>
+
+      </Router>
       {/* Body-container ends here */}
     </>
   )
