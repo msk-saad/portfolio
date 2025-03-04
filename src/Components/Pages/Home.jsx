@@ -7,7 +7,7 @@ const Home = () => {
   const [specialTextVisible, setSpecialTextVisible] = useState({
     text1: false,
     text2: false,
-    text3: false,
+    text3: false, 
   });
 
   const displaySpecialText = (textKey) => {

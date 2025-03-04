@@ -1,0 +1,20 @@
+{
+  "header": {
+    "title": "Projects",
+    "description": "I have worked on some of the projects this past year, here are some of them:"
+  },
+  "projects": [
+    {
+      "name": "Finding Missing Person using AI & CV",
+      "description": "A system to find a missing person by facial detection using Computer Vision",
+      "skills": ["Python", "StreamLit", "OpenCV"],
+      "url": "https://github.com/msk-saad/MissingPerson"
+    },
+    {
+      "name": "College Enquiry Chatbot",
+      "description": "A chatbot enabling students and parents to seamlessly inquire about various college-related information and services.",
+      "skills": ["ReactJS", "TailwindCSS", "Java", "SQL"],
+      "url": "https://github.com/msk-saad/CollegeEnquiryChatbot"
+    }
+  ]
+}

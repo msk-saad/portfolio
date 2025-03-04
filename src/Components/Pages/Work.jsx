@@ -28,7 +28,7 @@ const Work = () => {
                 {experience.city}
               </div>
 
-              <div className="timelime">
+              <div className="timeline">
                 {experience.timeline}
               </div>
             </div>
