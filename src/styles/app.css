@@ -62,7 +62,7 @@
   }
 }
 
-.nav {
+.nav, .hamburger-menu{
   display: none;
 }
 
@@ -71,6 +71,13 @@
     display: flex;
     align-items: center;
     gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
   }
 }
 
@@ -117,3 +124,6 @@
   color: #e4e4e7;
 }
 
+.hamburger-menu {
+
+}

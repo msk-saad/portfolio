@@ -6,8 +6,15 @@ import Home from './Components/Pages/Home'
 import Work from './Components/Pages/Work'
 import Projects from './Components/Pages/Projects'
 import Posts from './Components/Pages/Posts'
+import { useState } from 'react'
 
 function App() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(prevState => !prevState);
+  }
 
   return (
     <>
@@ -17,8 +24,13 @@ function App() {
 
     {/* Nav-bar section starts */}
       <div className="navBar-container">
+
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <span className="hamburger-icon">&#9776;</span>
+      </div>
+
         <div className="nav">
-          <Nav />
+          <Nav isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
         </div>
         
         <div className="chat">
