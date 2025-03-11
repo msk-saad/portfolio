@@ -1,32 +1,16 @@
+/* Work Container */
 .work-container {
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 750px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 5rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 1rem 5rem;
   font-size: 1.125rem;
   box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
-  border-color: #e5e7eb;
 }
 
-@media (max-width: 640px) {
-  .work-container {
-    margin-left: 20%;
-  }
-}
-
-@media (max-width: 768px) {
-  .work-container {
-    margin-left: 10%;
-  }
-}
-
+/* Header */
 .header {
-  margin-top: -30px;
+  margin-bottom: 2rem;
   margin-left: 50px;
 }
 
@@ -41,18 +25,17 @@
   font-size: 18px;
 }
 
+/* Experience Container */
 .experience-container {
-  color: inherit;
   background: #2d2d2d;
-  margin: 6px;
-  padding: 0.25rem 1.25rem;
+  padding: 1.25rem;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
-  margin-left: 50px;
-  margin-top: 20px;
+  margin: 1rem 50px;
 }
 
+/* Job Location & Dates */
 .experience-container .workcity {
   display: flex;
   justify-content: space-between;
@@ -62,7 +45,8 @@
   margin-bottom: 20px;
 }
 
-.experience-container .workplace h1{
+/* Workplace Title */
+.experience-container .workplace h1 {
   font-size: 20px;
   font-weight: 700;
 }
@@ -74,13 +58,16 @@
   margin-bottom: 10px;
 }
 
+/* Work Description */
 .experience-container .work-desc p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+/* Skills Section */
 .experience-container .work-skills {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 20px;
   opacity: 0.5;
@@ -94,7 +81,59 @@
   border-radius: 20px;
 }
 
-.experience-container .work-skills .skill:hover {
-  color: #ffffff;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header {
+    margin-left: 30px;
+  }
+
+  .experience-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
+@media (max-width: 640px) {
+  .work-container {
+    margin-top: -20px;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .header {
+    margin-left: 10px;
+  }
+
+  .header h1, h3 {
+    margin-left: -80px;
+  }
+
+  .experience-container {
+    margin-left: -40px;
+    width: 360px;
+    margin-right: 10px;
+    padding: 1rem;
+  }
+
+  .experience-container .workcity {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .experience-container .work-desc p {
+    font-size: 14px;
+  }
+
+  .experience-container .workplace h1 {
+    font-size: 18px;
+  }
+
+  .experience-container .workplace p {
+    font-size: 16px;
+  }
+
+  .experience-container .work-skills {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
