@@ -1,9 +1,10 @@
 import React from 'react'
+import '../../styles/posts.css'
 
 const Posts = () => {
 
   return (
-    <p className='text-yellow-400 text-2xl text-center font-medium'>Thank you for your patience, Posts page is under construction</p>
+    <p className='posts'>Thank you for your patience, Posts page is under construction</p>
   )
 }
 
