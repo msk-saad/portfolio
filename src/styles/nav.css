@@ -83,7 +83,6 @@ nav a:hover {
 @media (max-width: 640px) {
   .nav-links {
     display: flex;
-    /* z-index: 5; */
   }
 }
 
