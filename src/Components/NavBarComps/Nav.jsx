@@ -6,15 +6,12 @@ const Nav = ({ toggleMenu, isMenuOpen }) => {
   return (
     <div>
       {/* Navigation */}
-      <nav>
-        {/* Home Link */}
-
-        <div className="hamburger" onClick={toggleMenu}>
-        </div>
-
+      <nav className={`nav ${isMenuOpen ? 'menu-open' : ''}`}>
+      
+      <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
         <Link
           className="relative flex items-center gap-2 py-3 pr-1 text-sm transition-colors hover:text-zinc-300 sm:text-base"
-          to="/"
+          to="/" onClick={toggleMenu}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +34,7 @@ const Nav = ({ toggleMenu, isMenuOpen }) => {
         {/* Work Link */}
         <Link
           className="relative flex items-center gap-2 py-3 pr-1 text-sm transition-colors hover:text-zinc-300 sm:text-base"
-          to="/work"
+          to="/work" onClick={toggleMenu}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +57,7 @@ const Nav = ({ toggleMenu, isMenuOpen }) => {
         {/* Projects Link */}
         <Link
           className="relative flex items-center gap-2 py-3 pr-1 text-sm transition-colors hover:text-zinc-300 sm:text-base"
-          to="/projects"
+          to="/projects" onClick={toggleMenu}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +79,7 @@ const Nav = ({ toggleMenu, isMenuOpen }) => {
         {/* Posts Link */}
         <Link
           className="relative flex items-center gap-2 py-3 pr-1 text-sm transition-colors hover:text-zinc-300 sm:text-base"
-          to="/posts"
+          to="/posts" onClick={toggleMenu}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,6 +99,7 @@ const Nav = ({ toggleMenu, isMenuOpen }) => {
           </svg>
           Posts
         </Link>
+        </div>
       </nav>
     </div>
   );

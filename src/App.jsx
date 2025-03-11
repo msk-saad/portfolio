@@ -6,15 +6,24 @@ import Home from './Components/Pages/Home'
 import Work from './Components/Pages/Work'
 import Projects from './Components/Pages/Projects'
 import Posts from './Components/Pages/Posts'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(prevState => !prevState);
+    console.log('Menu Toggled', !isMenuOpen)
+    setIsMenuOpen((prevState) => !prevState);
   }
+
+  useEffect(() => {
+    if(isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -26,12 +35,14 @@ function App() {
       <div className="navBar-container">
 
       <div className="hamburger-menu" onClick={toggleMenu}>
-        <span className="hamburger-icon">&#9776;</span>
-      </div>
-
-        <div className="nav">
-          <Nav isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
+        {isMenuOpen ? (
+            <span className="hamburger-icon close-icon">&#10005;</span> // 'X' icon when menu is open
+          ) : (
+            <span className="hamburger-icon">&#9776;</span> // Hamburger icon when menu is closed
+          )}
         </div>
+
+        <Nav isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         
         <div className="chat">
           <ChatLink />
