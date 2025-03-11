@@ -13,31 +13,20 @@
   border-color: #e5e7eb;
 }
 
-@media (max-width: 640px) {
-  .work-container {
-    margin-left: 20%;
-  }
-}
 
-@media (max-width: 768px) {
-  .work-container {
-    margin-left: 10%;
-  }
-}
-
-.header {
+.project-header {
   margin-top: -30px;
   margin-left: 50px;
 }
 
-.header h1 {
+.project-header h1 {
   font-size: 26px;
   font-weight: 600;
   color: #e4e4e7;
   margin-bottom: 20px;
 }
 
-.header h3 {
+.project-header h3 {
   font-size: 18px;
 }
 
@@ -116,3 +105,29 @@
   color: #ffffff;
 }
 
+@media (max-width: 640px) {
+  .projects-container {
+    margin-top: -30px;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .project-header {
+    margin-left: -38px;
+  }
+
+  .project-header h1, h3 {
+    margin-left: 40px;
+  }
+
+  .project-container {
+    margin-left: -5px;
+    width: 360px;
+    margin-right: 10px;
+  }
+
+  .project-container .skills {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}

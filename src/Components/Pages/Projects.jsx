@@ -17,9 +17,9 @@ const Projects = () => {
   return (
     <>
       <div className="projects-container">
-        <div className="header">
-          <h1>{data.header.title}</h1>
-          <h3>{data.header.description}</h3>
+        <div className="project-header">
+          <h1>{data.projectHeader.title}</h1>
+          <h3>{data.projectHeader.description}</h3>
         </div>
 
         {data.projects.map((projects, index) => (

@@ -16,9 +16,9 @@ const Work = () => {
   return (
     <>
       <div className="work-container">
-        <div className="header">
-          <h1>{data.header.title}</h1>
-          <h3>{data.header.description}</h3>
+        <div className="work-header">
+          <h1>{data.workHeader.title}</h1>
+          <h3>{data.workHeader.description}</h3>
         </div>
 
         {data.experience.map((experience, index) => (

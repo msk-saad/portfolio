@@ -8,20 +8,20 @@
   box-sizing: border-box;
 }
 
-/* Header */
-.header {
+/* work-header */
+.work-header {
   margin-bottom: 2rem;
   margin-left: 50px;
 }
 
-.header h1 {
+.work-header h1 {
   font-size: 26px;
   font-weight: 600;
   color: #e4e4e7;
   margin-bottom: 20px;
 }
 
-.header h3 {
+.work-header h3 {
   font-size: 18px;
 }
 
@@ -83,7 +83,7 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .header {
+  .work-header {
     margin-left: 30px;
   }
 
@@ -95,24 +95,27 @@
 
 @media (max-width: 640px) {
   .work-container {
-    margin-top: -20px;
+    margin-top: -38px;
     max-width: 100%;
     padding: 1rem;
   }
 
-  .header {
+  .work-header {
     margin-left: 10px;
+    margin-top: -10px;
   }
 
-  .header h1, h3 {
-    margin-left: -80px;
+  .work-header h3 {
+    margin-left: 2px;
+    margin-top: -4px;
   }
 
   .experience-container {
-    margin-left: -40px;
+    margin-left: 2px;
     width: 360px;
     margin-right: 10px;
     padding: 1rem;
+    margin-top: -10px;
   }
 
   .experience-container .workcity {
