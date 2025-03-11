@@ -102,6 +102,7 @@
   margin-right: 6px;
 }
 
+
 .connect {
   margin: 40px;
   text-align: start;
@@ -197,12 +198,18 @@
     color: inherit;
     background: #2d2d2d;
     cursor: pointer;
-    margin: 6px 0;
-    padding: 0.25rem 1.25rem;
+    margin: 4px 0;
+    /* padding: 0.25rem 1.25rem; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.125rem;
+    padding-left: 1.125rem;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
-    width: 100%;
+    width: 350px;
+    margin-left: -30px;
+    
   }
 
   .e-btn:hover {
@@ -218,6 +225,10 @@
   .connect {
     margin: 20px 0;
     text-align: center;
+    color: inherit;
+  }
+
+  .connect p {
     color: inherit;
   }
 

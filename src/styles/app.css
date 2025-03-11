@@ -82,11 +82,15 @@
 }
 
 @media (max-width: 640px) {
+  .navBar-container {
+    position: relative;
+  }
+
   .hamburger-menu .hamburger-icon{
     display: block;
     cursor: pointer;
     z-index: 10;
-    position: fixed;
+    position: absolute;
   }
 
   .close-icon {
@@ -99,23 +103,6 @@
   }
 }
 
-/* .nav a {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-right: 0.25rem;
-  font-size: 0.875rem;
-  transition: color 0.3s;
-} */
-/* 
-.nav a:hover {
-  color: #e4e4e7;
-} */
 
 @media (min-width:640px) {
   .nav a {
